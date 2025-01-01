@@ -1,10 +1,10 @@
-import { Container, Input } from '@/components'
+import { Container, GameCard, Input } from '@/components'
 import Image from 'next/image';
 import Link from 'next/link';
 
 import { GameProps } from '@/utils/types/game';
 
-export async function getGames(){
+export async function getDailyGames(){
   try {
     const res = await fetch(`${process.env.NEXT_API_URL}/next-api/?api=game_day`)
     return res.json()
@@ -13,8 +13,18 @@ export async function getGames(){
   }
 }
 
+export async function getGamesData(){
+  try {
+    const res = await fetch(`${process.env.NEXT_API_URL}/next-api/?api=games`)
+    return res.json()
+  } catch(err){
+    throw new Error('Failed to fetch data')
+  }
+}
+
 export default async function Home() {
-  const spaceGame: GameProps = await getGames();
+  const spaceGame: GameProps = await getDailyGames();
+  const games: GameProps[] = await getGamesData()
 
   return (
     <main className='w-full'>
@@ -44,6 +54,15 @@ export default async function Home() {
         </Link>
 
         <Input />
+
+        <h2 className='mt-8 mb-5 text-white text-lg font-bold'>Jogos para conhecer</h2>
+        <section className='grid gap-7 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
+          {
+            games && games.map(item => (
+              <GameCard data={item} key={item.id} />
+            ))
+          }
+        </section>
       </Container>
     </main>
   );

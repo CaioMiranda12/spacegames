@@ -17,7 +17,7 @@ export function Input(){
 
     return (
         <form 
-        className="my-5 w-full bg-white flex gap-2 justify-between items-center p-2"
+        className="my-5 w-full bg-white flex gap-2 justify-between items-center p-2 rounded-lg"
         onSubmit={handleButton}
         >
             <input

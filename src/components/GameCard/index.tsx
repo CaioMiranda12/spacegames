@@ -23,7 +23,7 @@ export function GameCard({ data }: GameCardProps) {
                     />
                 </div>
 
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center mt-2">
                     <p className="text-white truncate">{data.title}</p>
                     <BiRightArrowCircle size={24} color="#fff" />
                 </div>

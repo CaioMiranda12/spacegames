@@ -53,6 +53,39 @@ export default async function Home() {
           </section>
         </Link>
 
+        <div className='my-12 w-full'>
+          <div className='flex justify-between max-w-screen-lg mx-auto'>
+            <Image 
+              src={'/steam.svg'}
+              alt='imagem da steam'
+              width={70}
+              height={70}
+              className='sm:w-40'
+            />
+            <Image 
+              src={'/microsoft.svg'}
+              alt='imagem da steam'
+              width={70}
+              height={70}
+              className='sm:w-40'
+            />
+            <Image 
+              src={'/xbox.svg'}
+              alt='imagem da steam'
+              width={70}
+              height={70}
+              className='sm:w-40'
+            />
+            <Image 
+              src={'/playstation.svg'}
+              alt='imagem da steam'
+              width={70}
+              height={70}
+              className='sm:w-40'
+            />
+          </div>
+        </div>
+
         <Input />
 
         <h2 className='mt-8 mb-5 text-white text-lg font-bold'>Jogos para conhecer</h2>

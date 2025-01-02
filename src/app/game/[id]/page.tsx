@@ -110,7 +110,7 @@ export default async function Game({
                     ))}
                 </section>
 
-                <h2 className="text-white font-bold text-lg mt-8 mb-5">Categorias disponíveis:</h2>
+                <h2 className="text-white font-bold text-lg mt-8 mb-5">Categorias:</h2>
                 <section className="flex gap-4 flex-wrap">
                     {game && game.categories.map(item => (
                         <Label name={item} key={item} />

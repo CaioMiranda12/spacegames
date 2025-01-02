@@ -1,14 +1,11 @@
-import Image from "next/image";
 import Link from "next/link";
-
-import LogoImg from '@/../public/logo.svg'
 
 import { FaRegCircleUser } from "react-icons/fa6";
 
 
 export function Header(){
     return (
-        <header className="w-full h-28 text-white px-2 bg-black">
+        <header className="w-full h-28 text-white px-2 bg-[#1C1C28]">
             <div className="max-w-screen-xl mx-auto flex justify-center sm:justify-between items-center h-28 ">
                 <nav className="flex items-center justify-center gap-6">
                     <Link href='/'>

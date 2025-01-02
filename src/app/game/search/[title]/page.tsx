@@ -29,7 +29,7 @@ export default async function Search({
 
                 <h1 className='text-white font-bold text-lg'>Veja o que encontramos na nossa base...</h1>
 
-                <section className='grid gap-7 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
+                <section className='grid gap-7 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-5'>
                    {games && games.map(item => (
                     <GameCard key={item.id} data={item} />
                    ))}

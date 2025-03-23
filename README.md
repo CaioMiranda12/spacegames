@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Space Games - Sistema de Jogos com React, Next.js, TypeScript e Tailwind CSS
 
-## Getting Started
+Space Games é uma plataforma de jogos que mostra informações sobre os jogos mais em alta, com um sistema de recomendação e pesquisa de jogos. O projeto usa Next.js com App Router, garantindo um roteamento eficiente e otimizado para SEO.
 
-First, run the development server:
+## ℹ️ Sobre o Projeto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Space Games oferece uma experiência interativa para usuários que buscam jogos populares, com funcionalidades de recomendação personalizada e pesquisa rápida.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Linguagem: TypeScript
+- Framework: React, Next.js (App Router)
+- Estilos: Tailwind CSS
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💡 Funcionalidades:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Sistema de recomendação baseado em dados de jogos
 
-## Learn More
+- Pesquisa por nome de jogo
 
-To learn more about Next.js, take a look at the following resources:
+- Integração com uma API para trazer dados atualizados
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Ferramentas Utilizadas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Next.js (App Router)
+- React
+- Tailwind CSS
+- TypeScript
 
-## Deploy on Vercel
+## 🌍 Acesse o Projeto
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+A versão ao vivo do Space Games está disponível em: (indisponível)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Explore os jogos mais populares diretamente na plataforma!

@@ -12,7 +12,7 @@ interface PropParams {
 }
 
 export async function generateMetadata({ params}: PropParams): Promise<Metadata>{
-    const { id } = await params;
+    const { id } = params;
 
     try {
         const response: GameProps = await fetch(`${process.env.NEXT_API_URL}/next-api/?api=game&id=${id}`)

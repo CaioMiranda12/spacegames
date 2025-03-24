@@ -74,7 +74,7 @@ export default async function Game({
 }: {
     params: { id: string }
 }){
-    const { id } = await params;
+    const { id } = params;
     const game: GameProps = await getGameData(id);
     const randomGame: GameProps = await getRandomGame()
 
